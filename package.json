@@ -1,0 +1,48 @@
+{
+    "name": "vue-chart-timeline",
+    "version": "1.0.0",
+    "description": "A Quasar Framework app",
+    "productName": "Quasar App",
+    "author": "Paulo Ferreira <otaviopfs@gmail.com>",
+    "private": true,
+    "scripts": {
+        "dev": "quasar dev",
+        "build": "quasar build",
+        "install": "npm install"
+    },
+    "dependencies": {
+        "@quasar/extras": "^1.15.0",
+        "axios": "^0.21.1",
+        "core-js": "^3.6.5",
+        "dayjs": "^1.9.7",
+        "gantt-schedule-timeline-calendar": "^3.33.13",
+        "mitt": "^3.0.0",
+        "popper.js": "1.14.4",
+        "quasar": "^2.7.7",
+        "tippy.js": "^6.3.3",
+        "vue": "^3.2.37",
+        "vue-click-outside": "1.0.7",
+        "vue-router": "^4.1.3",
+        "vuex": "^4.0.1",
+        "vuex-persist": "^3.1.3"
+    },
+    "devDependencies": {
+        "@quasar/app": "^3.0.0"
+    },
+    "browserslist": [
+        "last 10 Chrome versions",
+        "last 10 Firefox versions",
+        "last 4 Edge versions",
+        "last 7 Safari versions",
+        "last 8 Android versions",
+        "last 8 ChromeAndroid versions",
+        "last 8 FirefoxAndroid versions",
+        "last 10 iOS versions",
+        "last 5 Opera versions"
+    ],
+    "engines": {
+        "node": ">= 12.22.1",
+        "npm": ">= 6.13.4",
+        "yarn": ">= 1.21.1"
+    }
+}
