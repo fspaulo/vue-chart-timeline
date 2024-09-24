@@ -15,6 +15,10 @@ The following items should be installed in your system:
     * [WebStorm](https://www.jetbrains.com/pt-br/webstorm/download/#section=windows)
     * [VS Code](https://code.visualstudio.com)
 
+### 💻 Preview
+
+![Logo](./src/assets/gifs/Vue-Chart-Timeline-Google-Chrome-2024-09-24-11-42-18.gif)
+
 ### 🎲 Install Application
 
 ```
