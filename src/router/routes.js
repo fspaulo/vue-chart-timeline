@@ -1,27 +1,23 @@
+import MainLayout from 'layouts/MainLayout.vue';
+import Main from 'pages/Main.vue';
+import Index from 'pages/Index.vue';
+import Teste from 'pages/teste.vue';
+import Error404 from 'pages/Error404.vue';
+
 const routes = [
     {
         path: '/',
-        component: () => import('layouts/MainLayout.vue'),
+        component: MainLayout,
         children: [
-            {path: '', component: () => import('pages/Main.vue')},
-            {
-                path: '/homepage',
-                component: () => import("pages/Index.vue")
-            },
-
-            {
-                path: '/teste',
-                component: () => import("pages/teste.vue")
-            },
+            {path: '', component: Main},
+            {path: '/homepage', component: Index},
+            {path: '/teste', component: Teste},
         ]
     },
-
-    // Always leave this as last one,
-    // but you can also remove it
     {
         path: '/:catchAll(.*)*',
-        component: () => import('pages/Error404.vue')
+        component: Error404
     }
-]
+];
 
-export default routes
+export default routes;

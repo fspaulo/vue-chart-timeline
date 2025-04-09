@@ -1,6 +1,7 @@
 <template>
     <q-dialog
-        v-model="showDialog"
+        :model-value="showDialog"
+        @update:model-value="$emit('update:showDialog', $event)"
         persistent
         style="width: 300px"
     >
@@ -120,7 +121,7 @@ export default {
 
     methods: {
         closeDialog() {
-            this.$emit('closeDialog')
+            this.$emit('update:showDialog', false); // Atualiza o estado no componente pai
         },
 
         saveEdit() {

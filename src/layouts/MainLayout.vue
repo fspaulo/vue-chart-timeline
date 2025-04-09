@@ -51,7 +51,6 @@
                 <q-item
                     to="/homepage"
                     v-ripple clickable
-                    class=""
                 >
                     <q-item-section avatar>
                         <q-icon name="home"/>
@@ -82,7 +81,7 @@
 
 <script>
 import EssentialLink from 'components/EssentialLink.vue'
-import dialogIMG from "components/dialogIMG";
+import dialogIMG from 'src/components/dialogIMG.vue';
 
 const linksList = [
     {
@@ -153,7 +152,7 @@ export default defineComponent({
     watch: {
         toggleDark(val) {
             this.$q.dark.set(val);
-            localStorage.setItem("darkMode", this.toggleDark.toString())
+            localStorage.setItem("darkMode", val.toString());
         }
     }
 })

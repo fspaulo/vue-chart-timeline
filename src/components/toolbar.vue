@@ -36,8 +36,8 @@
 
 <script>
 import {mapGetters, mapMutations} from "vuex"
-import BookmarksDialog from "components/BookmarksDialog.vue";
-import CaptionsDialog from "components/captionsDialog";
+import BookmarksDialog from "src/components/BookmarksDialog.vue";
+import CaptionsDialog from "src/components/captionsDialog.vue";
 
 export default {
     name: "toolbar",

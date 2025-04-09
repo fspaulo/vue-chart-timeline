@@ -129,7 +129,8 @@
     <q-page-sticky position="bottom-right" :offset="[40, 50]">
         <q-fab
             v-show="selectedItems.length !== 0"
-            v-model="floatButton"
+            :model-value="floatButton"
+            @update:model-value="floatButton = $event"
             icon="edit"
             direction="up"
             color="primary"

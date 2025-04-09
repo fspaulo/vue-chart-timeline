@@ -7,7 +7,8 @@ by Mister lonly
 -->
 <template>
     <q-dialog
-        v-model="showDialog"
+        :model-value="showDialog"
+        @update:model-value="$emit('update:showDialog', $event)"
     >
         <q-card>
             <q-bar>
@@ -32,14 +33,13 @@ by Mister lonly
                             alt="misterlonly" src="../assets/utils/boatardeakon.jpg"
                         />
                         <img
-                            v-if="new Date().getHours() >= 18 && new Date().getHours() <= 5"
+                            v-if="new Date().getHours() >= 18 || new Date().getHours() <= 5"
                             alt="misterlonly" src="../assets/utils/boanoiteakon.jpg"
                         />
                     </q-card>
                 </div>
             </div>
         </q-card>
-
     </q-dialog>
 </template>
 
@@ -52,11 +52,9 @@ export default {
         src: String,
     },
 
-    computed: {},
-
     methods: {
         closeDialog() {
-            this.$emit('close')
+            this.$emit('update:showDialog', false); // Notifica o pai para fechar o diálogo
         },
     },
 }

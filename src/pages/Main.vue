@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import TasksPresentation from "components/ChartTimeline.vue";
-import toolbar from "components/toolbar";
+import TasksPresentation from "src/components/ChartTimeline.vue";
+import toolbar from "src/components/toolbar.vue";
 
 export default {
     name: "Presentation",
